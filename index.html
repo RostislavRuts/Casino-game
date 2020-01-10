@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="container startPage">
+		<div class="row justify-content-center">
+			<div class="col-md-8 forUserName">
+				<h5><i>Приветствую тебя, смертный.  Хочешь испытать удачу? <br>Тогда назови свое имя...</i></h5>
+				<input type="text" id="userName" placeholder="Введите Ваше имя..." maxlength="20">
+				<button>Продолжить</button>
+			</div>
+		</div>
+		<img src="images/halloween-clipart-clipart-banner-631041-6809639.png" alt="HH">
+		<img src="images/Witch-PNG-Image-Background.png" alt="witch">
+	</div>
+
+	<div class="container gamePage">
+		<div class="row justify-content-end">
+			<div class="col-md-3 yourName">
+				<p id="yourName">namenamenamenam</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-5 pointTable">
+				<table cellpadding="5" cellspacing="0">
+					<tr>
+						<td>Комбинация</td>
+						<td>Описание</td>
+						<td>Выигрыш</td>
+					</tr>
+					<tr>
+						<td> 
+							<img src="images/1.png" alt="pumpkin" width="50" height="50">
+							<img src="images/1.png" alt="pumpkin" width="50" height="50">
+							<img src="images/1.png" alt="pumpkin" width="50" height="50"> 
+						</td>
+						<td>Три тыквы</td>
+						<td>800 к 1</td>
+					</tr>2
+					<tr>
+						<td> 
+							<img src="images/2.png" alt="vampire" width="50" height="50">
+							<img src="images/2.png" alt="vampire" width="50" height="50">
+							<img src="images/2.png" alt="vampire" width="50" height="50"> 
+						</td>
+						<td>Три дракулы</td>
+						<td>200 к 1</td>
+					</tr>
+					<tr>
+						<td> 
+							<img src="images/3.png" alt="tomb" width="50" height="50">
+							<img src="images/3.png" alt="tomb" width="50" height="50">
+							<img src="images/3.png" alt="tomb" width="50" height="50"> 
+						</td>
+						<td>Три гроба</td>
+						<td>80 к 1</td>
+					</tr>
+					<tr>
+						<td> 
+							<img src="images/4.png" alt="witchhat"  width="50" height="50">
+							<img src="images/4.png" alt="witchhat"  width="50" height="50">
+							<img src="images/4.png" alt="witchhat"  width="50" height="50"> 
+						</td>
+						<td>Три шляпы</td>
+						<td>40 к 1</td>
+					</tr>
+					<tr>
+						<td> 
+							<img src="images/5.png" alt="ghost" width="50" height="50">
+							<img src="images/5.png" alt="ghost" width="50" height="50">
+							<img src="images/5.png" alt="ghost" width="50" height="50"> 
+						</td>
+						<td>Три привидения</td>
+						<td>20 к 1</td>
+					</tr>
+					<tr>
+						<td> 
+							<img src="images/6.png" alt="cauldron" width="50" height="50">
+							<img src="images/6.png" alt="cauldron" width="50" height="50">
+							<img src="images/6.png" alt="cauldron" width="50" height="50"> 
+						</td>
+						<td>Три котла</td>
+						<td>10 к 1</td>
+					</tr>
+					<tr>
+						<td> 
+							<img src="images/2.png" alt="vampire" width="50" height="50">
+							<img src="images/6.png" alt="cauldron" width="50" height="50">
+							<img src="images/6.png" alt="cauldron" width="50" height="50">
+						</td>
+						<td>Два котла</td>
+						<td>5 к 1</td>
+					</tr>
+					<tr>
+						<td> 
+							<img src="images/3.png" alt="witchhat" width="50" height="50"> 
+							<img src="images/4.png" alt="pumpkin" width="50" height="50"> 
+							<img src="images/6.png" alt="cauldron" width="50" height="50"> 
+						</td>
+						<td>Один котел</td>
+						<td>2 к 1</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="col-md-4 userList">
+				
+				<div class="pointList">
+					<h5>На вашем счете:</h5>
+					
+					<p id="money"><img src="images/coin_PNG36915.png" width="35"><span>0.00</span></p>
+					
+					<button class="repCard">Пополнить счет <img src="images/C__fakepath_psd-halloween-pumpkin-basket-candy-illustration-heypik-7SU45CT.png" width="30"></button>
+
+					<div class="cardAcount">
+						<img src="images/dsgdsgds.png" width="90">
+						<p>На какую сумму пополнить?</p>
+
+						<input type="text" name="cardAcount" placeholder="Введите сумму">
+
+						<button class="replenish">Пополнить</button>
+					</div>
+					
+					<h5>На кону:</h5>
+						
+					<p id="rate"><img src="images/coin_PNG36915.png" width="35" alt=""><span>0.00</span></p>
+
+					<button class="placeAbet">Сделать ставку <img src="images/coin_PNG36941.png" width="35"></button>
+
+					<div class="rateBlock">
+						<img src="images/dsgdsgds.png" width="90">
+						<p>Сколько ты ставишь?</p>
+
+						<input type="text" name="rateAcount" placeholder="Введите ставку">
+
+						<button class="doRate">Поставить</button>
+					</div>
+					
+					<p>Общий выиграш:</p>
+					<p><img src="images/Treasure-Transparent.png" width="50"> <span id="winSum">0</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="col-md-3 sliderBlock">
+				<div class="row justify-content-center carousel">
+					<div id="slot-1" class="col-md-4 slider-col" >
+						<div data-u="slides" class="slides-container" >
+							<div><img src="images/1.png" alt="witchhat" width="50" height="50"></div>
+							<div><img src="images/2.png" alt="witchhat" width="50" height="50"></div>
+							<div><img src="images/3.png" alt="witchhat" width="50" height="50"></div>
+							<div><img src="images/4.png" alt="witchhat" width="50" height="50"></div>
+							<div><img src="images/5.png" alt="witchhat" width="50" height="50"></div>
+							<div><img src="images/6.png" alt="witchhat" width="50" height="50"></div>
+						</div>
+					</div>
+					<div id="slot-2" class="col-md-4 slider-col" >
+						<div data-u="slides" class="slides-container" >
+							<div><img src="images/1.png" alt="witchhat" width="50" height="50"></div>
+							<div><img src="images/2.png" alt="witchhat" width="50" height="50"></div>
+							<div><img src="images/3.png" alt="witchhat" width="50" height="50"></div>
+							<div><img src="images/4.png" alt="witchhat" width="50" height="50"></div>
+							<div><img src="images/5.png" alt="witchhat" width="50" height="50"></div>
+							<div><img src="images/6.png" alt="witchhat" width="50" height="50"></div>
+						</div>
+					</div>
+					<div id="slot-3" class="col-md-4 slider-col">
+						<div data-u="slides" class="slides-container">
+							<div><img src="images/1.png" alt="witchhat" width="50" height="50"></div>
+							<div><img src="images/2.png" alt="witchhat" width="50" height="50"></div>
+							<div><img src="images/3.png" alt="witchhat" width="50" height="50"></div>
+							<div><img src="images/4.png" alt="witchhat" width="50" height="50"></div>
+							<div><img src="images/5.png" alt="witchhat" width="50" height="50"></div>
+							<div><img src="images/6.png" alt="witchhat" width="50" height="50"></div>
+						</div>
+					</div>
+				</div>
+				
+				<button id="start"> Попытать удачу!</button>
+			</div>
+		</div>
+
+		<div class="error">
+			<img src="images/1505110223_mystical-halloween-1-06.png" alt="">
+			<h3>Убедись, что у тебя достаточно денег на счете и ты сделал ставку!!!</h3>
+			<button>Продолжить</button>
+		</div>	
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="js/jquery.animate-colors-min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jssor.slider.min.js"></script>
+	<script src="js/my-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+html, body
+{
+	width: 100%;
+	height: 100%;
+}
+body
+{
+	background: url(../images/thumb-1920-745491.jpg) no-repeat;
+	background-size: cover;
+}
+.startPage
+{
+	display: block;
+}
+.forUserName
+{
+	/*background-color: rgba(150, 0, 255, 0.5);*/
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 20px;
+	border-radius: 10px;
+	margin-top: 25%; 
+	/*color: #3B1E39;*/
+}
+.startPage img[alt="witch"]
+{
+	position: absolute;
+	z-index: 1;
+	width: 30%;
+	top: 9%;
+	left: 9%;
+}
+.startPage img[alt="HH"]
+{
+	position: absolute;
+	z-index: 2;
+	width: 30%;
+	top: -5%;
+	left: 35%;
+}
+.forUserName h5
+{
+	margin-left: 20%;
+}
+.forUserName input
+{
+	background-color: rgba(100, 0, 255, 0.8);
+	border: 2px solid orange;
+	border-radius: 5px;
+	padding: 5px;
+	width: 40%;
+	color: #DF7712;
+	font-weight: bold;
+	font-style: italic;
+	margin-left: 20%;
+}
+.forUserName button, .sliderBlock button
+{
+	position: relative; 
+	font-weight: bold;
+  	color: #F9FAE6;
+  	text-shadow: 0 -1px 1px #cc5500;
+  	user-select: none;
+  	padding: 5px 15px;
+  	margin-left: 15px;
+  	outline: none;
+  	border-radius: 5px;
+	background: -webkit-linear-gradient(right, rgba(0,0,0,.3), rgba(0,0,0,.0) 50%, rgba(0,0,0,.3)), -webkit-linear-gradient(#d77d31, #fe8417, #d77d31);
+	background: -o-linear-gradient(right, rgba(0,0,0,.3), rgba(0,0,0,.0) 50%, rgba(0,0,0,.3)), -o-linear-gradient(#d77d31, #fe8417, #d77d31);
+	background: linear-gradient(to left, rgba(0,0,0,.3), rgba(0,0,0,.0) 50%, rgba(0,0,0,.3)), linear-gradient(#d77d31, #fe8417, #d77d31);
+	background-size: 100% 100%, auto;
+	background-position: 50% 50%;
+	box-shadow: inset #ebab00 0 -1px 1px, inset 0 1px 1px #ffbf00, #cc7722 0 0 0 1px, #000 0 10px 15px -10px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.forUserName button:hover, .sliderBlock button:hover
+{
+  	background-size: 140% 100%, auto;
+}
+.forUserName button:active, .sliderBlock button:active 
+{
+  	top: 1px;
+  	color: #ffdead;
+  	box-shadow: inset #ebab00 0 -1px 1px, inset 0 1px 1px #ffbf00, #cc7722 0 0 0 1px, 0 10px 10px -9px #000;
+}
+.gamePage
+{
+	display: none;
+}
+#yourName
+{
+	font-family: 'Playfair Display', serif;
+	font-size: 18px;
+	text-align: center;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: -25px;
+	color: silver;
+	text-shadow: 0 0 1px #ffffff, 0 0 3px #ffffff, 0 0 10px #fff;
+}
+.pointTable
+{
+	margin: 2% 5% 0 -15%;
+}
+.pointTable table 
+{
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	color: #DF7712;
+	border-collapse: collapse;
+	font-weight: bold;
+}
+.pointTable table img
+{
+	padding: 0;
+	margin: 0;
+}
+.pointTable table tr:nth-child(even)
+{
+	background-color: rgba(150, 0, 255, 0.8);
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+.pointTable table tr:nth-child(odd)
+{
+	background-color: rgba(100, 0, 255, 0.8);
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+.pointTable table tr:hover
+{
+	box-shadow: 0 0 4px 2px #fff inset;
+	cursor: pointer;
+	padding: 10px;
+}
+.pointTable table tr:first-child
+{
+	background: #242F4B;
+	color: rgb(200, 50,0);
+	font-weight: bold;
+	font-size: 20px;
+}	
+.userList
+{
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+	margin: 5% 0 0 35%;
+	background: url(../images/listpaper.png) no-repeat;
+	background-size: contain;
+	text-align: center;
+	padding-top: 4%;
+}
+.userList span
+{
+	font-size: 20px;
+}
+.pointList
+{
+	margin-top: 40px;
+}
+.userList button, .error button
+{
+	font-family: 'Playfair Display', serif;
+	font-size: 16px;
+ 	font-weight: bold;
+  	padding: 5px 10px;
+  	cursor: pointer;
+  	outline: none;
+  	user-select: none;
+  	border: none;
+  	border-radius: 10px;
+  	color: gold;
+  	transition: .2s linear;
+  	background-color: rgb(100, 0, 255);
+  	box-shadow: 5px 5px 5px 0 black;
+  	position: relative;
+  	top: 0;
+  	left: 0;
+}
+.userList button:hover, .error button:hover
+{
+	font-weight: bold;
+	box-shadow: 2px 2px white, 4px 4px rgb(100, 0, 255), 10px 10px 10px 0 black;
+	top: -4px;
+	left: -4px;
+}
+.userList button:active, .error button:active
+{
+	box-shadow: 1px 1px white, 3px 3px rgb(100, 0, 255);
+	top: -3px;
+	left: -3px;
+	transition: none;
+}
+.cardAcount, .rateBlock
+{
+	display: none;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 1);
+	border-radius: 5px;
+	width: 130%;
+	top: 24%;
+	left: -40%;
+	padding: 20px;
+	z-index: 2;
+}
+/*.rateBlock
+{
+	display: no
+}*/
+.cardAcount p, .rateBlock p
+{
+	color: white;
+	font-size: 22px;
+}
+.cardAcount input[name="cardAcount"], .rateBlock input[name="rateAcount"]
+{
+	background: orange;
+	outline: none;
+	border: 2px solid white;
+	border-radius: 5px;
+	padding: 0 10px;
+	color: black;
+}
+.cardAcount img, .rateBlock img
+{
+	float: left;
+	margin-right: 20px;
+}
+.userList div>h5:last-of-type
+{
+	margin-top: 10px;
+}
+.pointList p:nth-of-type(3)
+{
+	margin-top: 10px;
+	font-weight: bold;
+
+}
+.sliderBlock
+{
+	margin-top: -5%;
+	text-align: center;
+}
+.carousel
+{
+	background-color: rgba(100,100,200,0.8);
+	border: 2px solid #5307D9;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.sliderBlock button
+{
+	margin: 20px 0 0 0;
+}
+.error
+{
+	position: absolute;
+	z-index: 5;
+	width: 50%;
+	height: 60%;
+	padding: 1%;
+	top: 8%;
+	left: 25%;
+	background: rgba(0, 0, 0, 1);
+	border-radius: 10px;
+	border: 3px solid silver;
+	display: none;
+}
+.error img
+{
+	float: left;
+	width: 50%;
+}
+.error  h3
+{
+	color: silver;
+	margin-top: 10%;
+	text-shadow: 0 0 2px #ffffff, 0 0 8px #ffffff, 0 0 15px #195EFF, 0 0 40px #195EFF;
+}
+.error button
+{
+	margin-top: 25%;
+	margin-left: 30%;
+}
+
+div.slider-col{
+	height: 50px;
+	overflow: hidden;
+	position:relative;
+	top:0px;
+	left:0px;
+
+}
+
+div.slides-container{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:50px;
+	overflow:hidden;
+}
+
+/**:focus{outline: none; border: none;}
+button:focus{outline: none;}*/
